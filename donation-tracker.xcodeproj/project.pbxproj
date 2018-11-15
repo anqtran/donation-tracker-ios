@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED3BF6D9219CFC4E00F6663A /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3BF6D8219CFC4E00F6663A /* MyButton.swift */; };
 		EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6C3FE219C857900369DD7 /* AppDelegate.swift */; };
-		EDA6C401219C857900369DD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6C400219C857900369DD7 /* ViewController.swift */; };
+		EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6C400219C857900369DD7 /* SplashScreenVC.swift */; };
 		EDA6C404219C857900369DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA6C402219C857900369DD7 /* Main.storyboard */; };
 		EDA6C406219C857A00369DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA6C405219C857A00369DD7 /* Assets.xcassets */; };
 		EDA6C409219C857A00369DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA6C407219C857A00369DD7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED3BF6D8219CFC4E00F6663A /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		EDA6C3FB219C857900369DD7 /* donation-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "donation-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA6C3FE219C857900369DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDA6C400219C857900369DD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDA6C400219C857900369DD7 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		EDA6C403219C857900369DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDA6C405219C857A00369DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDA6C408219C857A00369DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED3BF6D7219CFC1500F6663A /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				ED3BF6D8219CFC4E00F6663A /* MyButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		EDA6C3F2219C857800369DD7 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +64,9 @@
 		EDA6C3FD219C857900369DD7 /* donation-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				ED3BF6D7219CFC1500F6663A /* Button */,
 				EDA6C3FE219C857900369DD7 /* AppDelegate.swift */,
-				EDA6C400219C857900369DD7 /* ViewController.swift */,
+				EDA6C400219C857900369DD7 /* SplashScreenVC.swift */,
 				EDA6C402219C857900369DD7 /* Main.storyboard */,
 				EDA6C405219C857A00369DD7 /* Assets.xcassets */,
 				EDA6C407219C857A00369DD7 /* LaunchScreen.storyboard */,
@@ -135,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA6C401219C857900369DD7 /* ViewController.swift in Sources */,
+				EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */,
 				EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */,
+				ED3BF6D9219CFC4E00F6663A /* MyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
