@@ -10,6 +10,11 @@ import UIKit
 
 @IBDesignable class MyButton: UIButton
 {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        layer.borderWidth = 0.2
+        layer.borderColor = UIColor.white.cgColor
+    }
     override func layoutSubviews() {
         super.layoutSubviews()
         

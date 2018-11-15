@@ -17,22 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="139011-640" translatesAutoresizingMaskIntoConstraints="NO" id="mu6-am-fLz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Navy-PIC-DZBC090686" translatesAutoresizingMaskIntoConstraints="NO" id="mu6-am-fLz">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation Tracker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMh-oP-ZVy">
-                                <rect key="frame" x="74" y="179" width="226" height="28.5"/>
+                                <rect key="frame" x="65" y="217" width="244" height="34.5"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <size key="shadowOffset" width="0.0" height="-3"/>
                             </label>
-                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7j-SM-a7M" customClass="MyButton" customModule="donation_tracker" customModuleProvider="target">
-                                <rect key="frame" x="90" y="375" width="194" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7j-SM-a7M" customClass="MyButton" customModule="donation_tracker" customModuleProvider="target">
+                                <rect key="frame" x="76" y="332" width="222" height="60"/>
                                 <color key="backgroundColor" red="0.053922198712825775" green="0.1652870774269104" blue="0.14926519989967346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lh2-5m-cdc"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Log In"/>
                                 <userDefinedRuntimeAttributes>
@@ -42,10 +43,12 @@
                                     <segue destination="hKw-0u-rKb" kind="show" id="eNo-KE-265"/>
                                 </connections>
                             </button>
-                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlP-x6-MWz" customClass="MyButton" customModule="donation_tracker" customModuleProvider="target">
-                                <rect key="frame" x="90" y="458" width="194" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlP-x6-MWz" customClass="MyButton" customModule="donation_tracker" customModuleProvider="target">
+                                <rect key="frame" x="76" y="448" width="222" height="60"/>
                                 <color key="backgroundColor" red="0.053922198712825775" green="0.1652870774269104" blue="0.14926519989967346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pXf-Ug-VRR"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Register"/>
                                 <userDefinedRuntimeAttributes>
@@ -58,9 +61,20 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TMh-oP-ZVy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="1Ki-ah-i8N"/>
-                            <constraint firstItem="TMh-oP-ZVy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="WA0-cN-yLZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TMh-oP-ZVy" secondAttribute="trailing" constant="75" id="qI8-G6-qbB"/>
+                            <constraint firstItem="qlP-x6-MWz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="BEj-vV-7Ic"/>
+                            <constraint firstItem="qlP-x6-MWz" firstAttribute="top" secondItem="B7j-SM-a7M" secondAttribute="bottom" constant="56" id="BzJ-G2-pUm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TMh-oP-ZVy" secondAttribute="trailing" constant="66" id="GnF-ve-hJm"/>
+                            <constraint firstItem="TMh-oP-ZVy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="153" id="Xkc-ai-flf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qlP-x6-MWz" secondAttribute="trailing" constant="77" id="Y7i-bY-a0F"/>
+                            <constraint firstItem="mu6-am-fLz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ckH-MZ-2XU"/>
+                            <constraint firstItem="mu6-am-fLz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fbD-q7-XKd"/>
+                            <constraint firstItem="mu6-am-fLz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gIK-TL-4IY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B7j-SM-a7M" secondAttribute="trailing" constant="77" id="hem-a3-XAs"/>
+                            <constraint firstItem="B7j-SM-a7M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="lnj-kv-XCk"/>
+                            <constraint firstItem="TMh-oP-ZVy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="mOo-Yy-Adp"/>
+                            <constraint firstItem="mu6-am-fLz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rKq-NO-9yA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qlP-x6-MWz" secondAttribute="bottom" constant="159" id="sqg-mg-Hsc"/>
+                            <constraint firstItem="B7j-SM-a7M" firstAttribute="top" secondItem="TMh-oP-ZVy" secondAttribute="bottom" constant="80.5" id="znl-G9-Aoq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -77,13 +91,33 @@
                     <view key="view" contentMode="scaleToFill" id="7WW-gY-k3V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Navy-PIC-DZBC090686" translatesAutoresizingMaskIntoConstraints="NO" id="1Ny-0c-PIX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr3-Hl-ViS">
+                                <rect key="frame" x="65" y="186" width="244" height="28.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Ny-0c-PIX" firstAttribute="leading" secondItem="GHd-tI-XFr" secondAttribute="leading" id="5nv-Jn-1qm"/>
+                            <constraint firstItem="1Ny-0c-PIX" firstAttribute="trailing" secondItem="GHd-tI-XFr" secondAttribute="trailing" id="bTW-UP-7ma"/>
+                            <constraint firstItem="1Ny-0c-PIX" firstAttribute="top" secondItem="GHd-tI-XFr" secondAttribute="top" id="hHS-Fe-I5s"/>
+                            <constraint firstItem="1Ny-0c-PIX" firstAttribute="bottom" secondItem="GHd-tI-XFr" secondAttribute="bottom" id="jsE-VL-cxr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GHd-tI-XFr"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVa-OS-gzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2065" y="537"/>
+            <point key="canvasLocation" x="2064.8000000000002" y="536.58170914542734"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EyL-pD-CfG">
@@ -92,13 +126,42 @@
                     <view key="view" contentMode="scaleToFill" id="30X-4w-tJa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Navy-PIC-DZBC090686" translatesAutoresizingMaskIntoConstraints="NO" id="Pdp-eL-clj">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donation Tracker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEQ-8a-Esb">
+                                <rect key="frame" x="65" y="118" width="244" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="-3"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email or Username" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sai-MB-W5e">
+                                <rect key="frame" x="65" y="285" width="244" height="28.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pdp-eL-clj" firstAttribute="trailing" secondItem="LzP-NC-Xjl" secondAttribute="trailing" id="BMd-k6-jiN"/>
+                            <constraint firstItem="Pdp-eL-clj" firstAttribute="top" secondItem="LzP-NC-Xjl" secondAttribute="top" id="gnU-Qh-jhb"/>
+                            <constraint firstItem="Pdp-eL-clj" firstAttribute="bottom" secondItem="LzP-NC-Xjl" secondAttribute="bottom" id="i4v-B8-Zxr"/>
+                            <constraint firstItem="Pdp-eL-clj" firstAttribute="leading" secondItem="LzP-NC-Xjl" secondAttribute="leading" id="rxL-YJ-hDJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LzP-NC-Xjl"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBK-cE-gfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2063" y="-229"/>
+            <point key="canvasLocation" x="2061.5999999999999" y="-229.83508245877064"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eT7-ZR-9Rz">
@@ -120,6 +183,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="139011-640" width="342" height="640"/>
+        <image name="Navy-PIC-DZBC090686" width="2048" height="2048"/>
     </resources>
 </document>
