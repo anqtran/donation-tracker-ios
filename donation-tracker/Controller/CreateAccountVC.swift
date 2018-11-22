@@ -8,18 +8,59 @@
 
 import UIKit
 
-class CreateAccountVC: UIViewController {
+class CreateAccountVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return locations.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return locations[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        employeeLocation = locations[row]
+        employeeLocationTxt.text = employeeLocation
+    }
+    
 
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var userTypeBtn: DLRadioButton!
+    @IBOutlet weak var employeeLocationTxt: UITextField!
     
     var userType: String?
+    var employeeLocation: String?
+    
+    var locations = ["AFD Station 4", "BOYS & GILRS CLUB W.W. WOOLFOLK", "PATHWAY UPPER ROOM CHRISTIAN MINISTRIES",
+                    "PAVILION OF HOPE INC", "D&D CONVENIENCE STORE", "KEEP NORTH FULTON BEAUTIFUL"]
+    
+    func createPickerView() {
+        let pickerView = UIPickerView()
+        pickerView.delegate = self
+        employeeLocationTxt.inputView = pickerView
+    }
+    
+    func dissmissPickerView()
+    {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.dismissKeyBoard))
+        toolBar.setItems([doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        employeeLocationTxt.inputAccessoryView = toolBar
+    }
+    
+    @objc func dismissKeyBoard() {
+        view.endEditing(true)
+    }
     
     override func viewDidLoad() {
+        employeeLocationTxt.isEnabled = false
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        createPickerView()
+        dissmissPickerView()
     }
  
     @IBAction func closedBtnPressed(_ sender: Any) {
@@ -42,9 +83,11 @@ class CreateAccountVC: UIViewController {
     @IBAction func userBtnPressed(_ sender: DLRadioButton) {
         if sender.tag == 1 {
             userType = "user"
+            employeeLocationTxt.text = ""
+            employeeLocationTxt.isEnabled = false
         } else {
             userType = "employee"
+            employeeLocationTxt.isEnabled = true
         }
-        print(userType!)
     }
 }

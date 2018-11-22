@@ -14,6 +14,7 @@
 		ED574E9D21A62CCE00A38B1F /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED574E9C21A62CCE00A38B1F /* CreateAccountVC.swift */; };
 		ED83B8BE21A6881800188700 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83B8BD21A6881800188700 /* AuthService.swift */; };
 		ED83B8C221A69F0500188700 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED83B8C121A69F0500188700 /* DLRadioButton.m */; };
+		ED83B8C421A6AB0D00188700 /* PickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83B8C321A6AB0D00188700 /* PickerTextField.swift */; };
 		EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6C3FE219C857900369DD7 /* AppDelegate.swift */; };
 		EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6C400219C857900369DD7 /* SplashScreenVC.swift */; };
 		EDA6C404219C857900369DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA6C402219C857900369DD7 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		ED83B8BF21A69F0400188700 /* donation-tracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "donation-tracker-Bridging-Header.h"; sourceTree = "<group>"; };
 		ED83B8C021A69F0400188700 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
 		ED83B8C121A69F0500188700 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
+		ED83B8C321A6AB0D00188700 /* PickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTextField.swift; sourceTree = "<group>"; };
 		EDA6C3FB219C857900369DD7 /* donation-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "donation-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA6C3FE219C857900369DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA6C400219C857900369DD7 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				ED30EBC721A61D2F001EF9C6 /* GradientView.swift */,
+				ED83B8C321A6AB0D00188700 /* PickerTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED574E9921A62C4A00A38B1F /* Constants.swift in Sources */,
+				ED83B8C421A6AB0D00188700 /* PickerTextField.swift in Sources */,
 				EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */,
 				ED574E9B21A62C9F00A38B1F /* LoginVC.swift in Sources */,
 				EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */,

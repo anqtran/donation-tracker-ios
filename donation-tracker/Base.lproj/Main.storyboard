@@ -184,6 +184,37 @@
                                     <action selector="closedBtnPressed:" destination="5pz-9j-sLz" eventType="touchUpInside" id="Gjr-ZU-rus"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hfa-ws-mTp">
+                                <rect key="frame" x="62.5" y="425" width="250" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="employee location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ra-UO-LMe" customClass="PickerTextField" customModule="donation_tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="p1P-KZ-WqI"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whf-Ru-tas">
+                                        <rect key="frame" x="0.0" y="28" width="250" height="2"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="Ejl-3Q-afh"/>
+                                            <constraint firstAttribute="height" constant="2" id="x5v-3c-NNE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="7bx-Ae-Bp7"/>
+                                    <constraint firstAttribute="height" constant="30" id="rln-Uz-qyb"/>
+                                </constraints>
+                            </stackView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpr-AJ-9Vz" customClass="DLRadioButton">
                                 <rect key="frame" x="50" y="363" width="110" height="32"/>
                                 <constraints>
@@ -207,7 +238,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6H-DV-rX4" customClass="DLRadioButton">
-                                <rect key="frame" x="205" y="363" width="120" height="32"/>
+                                <rect key="frame" x="190" y="363" width="120" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Iqn-8Y-IUE"/>
                                 </constraints>
@@ -235,10 +266,12 @@
                             <constraint firstItem="rHQ-sX-Rnr" firstAttribute="top" secondItem="GHd-tI-XFr" secondAttribute="top" constant="45" id="2cF-hM-ILi"/>
                             <constraint firstItem="0qd-e5-e7s" firstAttribute="top" secondItem="GHd-tI-XFr" secondAttribute="top" constant="8" id="6yW-8w-Wh4"/>
                             <constraint firstItem="fr3-Hl-ViS" firstAttribute="top" secondItem="rHQ-sX-Rnr" secondAttribute="bottom" constant="51.5" id="9Jb-e6-cbr"/>
-                            <constraint firstItem="GHd-tI-XFr" firstAttribute="trailing" secondItem="L6H-DV-rX4" secondAttribute="trailing" constant="50" id="9W1-t6-nvI"/>
+                            <constraint firstItem="GHd-tI-XFr" firstAttribute="trailing" secondItem="L6H-DV-rX4" secondAttribute="trailing" constant="65" id="9W1-t6-nvI"/>
                             <constraint firstItem="Xpr-AJ-9Vz" firstAttribute="top" secondItem="QPh-AN-XPe" secondAttribute="bottom" constant="20" id="A7F-pR-UbF"/>
                             <constraint firstItem="eSG-rh-PWc" firstAttribute="leading" secondItem="GHd-tI-XFr" secondAttribute="leading" constant="62.5" id="JQg-J3-ggk"/>
+                            <constraint firstItem="Hfa-ws-mTp" firstAttribute="centerX" secondItem="7WW-gY-k3V" secondAttribute="centerX" id="NoL-b5-eEW"/>
                             <constraint firstItem="GHd-tI-XFr" firstAttribute="trailing" secondItem="eSG-rh-PWc" secondAttribute="trailing" constant="62.5" id="XEn-oU-lBy"/>
+                            <constraint firstItem="Hfa-ws-mTp" firstAttribute="top" secondItem="Xpr-AJ-9Vz" secondAttribute="bottom" constant="30" id="aNl-es-EoB"/>
                             <constraint firstItem="QPh-AN-XPe" firstAttribute="centerX" secondItem="7WW-gY-k3V" secondAttribute="centerX" id="aob-hg-oE2"/>
                             <constraint firstItem="eSG-rh-PWc" firstAttribute="centerX" secondItem="7WW-gY-k3V" secondAttribute="centerX" id="c5a-ri-Rfa"/>
                             <constraint firstItem="GHd-tI-XFr" firstAttribute="trailing" secondItem="0qd-e5-e7s" secondAttribute="trailing" constant="16" id="ceO-C2-vgf"/>
@@ -254,6 +287,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTxt" destination="n4i-r7-lXp" id="40p-1R-dLm"/>
+                        <outlet property="employeeLocationTxt" destination="7ra-UO-LMe" id="dr6-06-wM3"/>
                         <outlet property="passwordTxt" destination="lic-tJ-9zr" id="vOD-Xd-f70"/>
                         <outlet property="userTypeBtn" destination="Xpr-AJ-9Vz" id="p7t-Wd-XEj"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ToWelcomeScreen" id="ExD-kx-Jsu"/>
@@ -404,7 +438,7 @@
         <image name="dt-ios" width="414" height="628"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Zos-x8-zDF"/>
+        <segue reference="R3h-7C-k6N"/>
         <segue reference="ExD-kx-Jsu"/>
     </inferredMetricsTieBreakers>
 </document>
