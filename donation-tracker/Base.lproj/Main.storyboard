@@ -94,9 +94,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr3-Hl-ViS">
-                                <rect key="frame" x="93.5" y="142" width="188" height="25.5"/>
-                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr3-Hl-ViS">
+                                <rect key="frame" x="93.5" y="142" width="188" height="30"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -124,9 +124,12 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAcctBtnPressed:" destination="5pz-9j-sLz" eventType="touchUpInside" id="Y7G-df-ycX"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="QPh-AN-XPe">
-                                <rect key="frame" x="62.5" y="252.5" width="250" height="86"/>
+                                <rect key="frame" x="62.5" y="257" width="250" height="86"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4i-r7-lXp">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
@@ -203,6 +206,8 @@
                         <viewLayoutGuide key="safeArea" id="GHd-tI-XFr"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="n4i-r7-lXp" id="40p-1R-dLm"/>
+                        <outlet property="passwordTxt" destination="lic-tJ-9zr" id="vOD-Xd-f70"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ToWelcomeScreen" id="ExD-kx-Jsu"/>
                     </connections>
                 </viewController>
