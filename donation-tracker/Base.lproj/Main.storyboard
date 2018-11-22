@@ -291,6 +291,7 @@
                         <outlet property="passwordTxt" destination="lic-tJ-9zr" id="vOD-Xd-f70"/>
                         <outlet property="userTypeBtn" destination="Xpr-AJ-9Vz" id="p7t-Wd-XEj"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ToWelcomeScreen" id="ExD-kx-Jsu"/>
+                        <segue destination="hKw-0u-rKb" kind="show" identifier="registerToLogin" id="zrt-pg-DxA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVa-OS-gzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -438,7 +439,8 @@
         <image name="dt-ios" width="414" height="628"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="R3h-7C-k6N"/>
+        <segue reference="zrt-pg-DxA"/>
+        <segue reference="Zos-x8-zDF"/>
         <segue reference="ExD-kx-Jsu"/>
     </inferredMetricsTieBreakers>
 </document>

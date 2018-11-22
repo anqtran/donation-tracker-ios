@@ -41,7 +41,7 @@ class AuthService {
         }
     }
     
-    func registerUser(email: String, password: String, completion: @escaping CompletionHandler) {
+    func registerAccount(email: String, password: String, completion: @escaping CompletionHandler) {
         
         let lowerCaseEmail = email.lowercased()
         
@@ -62,13 +62,31 @@ class AuthService {
                 debugPrint(response.result.error as Any)
             }
         }
-        
     }
-    
-    
-    
-    
-    
-    
+
+    func registerUser(email: String, password: String, type: String, location: String, completion: @escaping CompletionHandler) {
+        
+        let lowerCaseEmail = email.lowercased()
+        
+        let header = [
+            "Content-Type": "application/json; charset=utf-8"
+        ]
+        
+        let body: [String: Any] = [
+            "email": lowerCaseEmail,
+            "password": password,
+            "userType": type,
+            "location": location
+        ]
+        
+        Alamofire.request(URL_CREATE_USER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (response) in
+            if response.result.error == nil {
+                completion(true)
+            } else {
+                completion(false)
+                debugPrint(response.result.error as Any)
+            }
+        }
+    }
     
 }

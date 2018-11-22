@@ -14,7 +14,7 @@ typealias CompletionHandler = (_ Success: Bool) -> ()
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let TO_WELCOME_SCREEN = "ToWelcomeScreen"
-
+let FROM_REGISTER_TO_LOGIN = "registerToLogin"
 // User Defaults
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
@@ -23,3 +23,5 @@ let USER_EMAIL = "userEmail"
 // URL Constants
 let BASE_URL = "http://localhost:3005/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
+let URL_CREATE_USER = "\(BASE_URL)user/add"
+

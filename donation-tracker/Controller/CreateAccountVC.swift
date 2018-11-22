@@ -73,10 +73,17 @@ class CreateAccountVC: UIViewController, UIPickerViewDataSource, UIPickerViewDel
         guard let pass = passwordTxt.text, passwordTxt.text != "" else {
             return
         }
-        
-        AuthService.instance.registerUser(email: email, password: pass) { (success) in
+        let userLocation = employeeLocationTxt.text!
+        let typeOfUser = userType!
+        AuthService.instance.registerAccount(email: email, password: pass) { (success) in
             if (success) {
                 print("registered user!")
+                AuthService.instance.registerUser(email: email, password: pass, type: typeOfUser, location: userLocation, completion: { (done) in
+                    if(done) {
+                        print("adding user!")
+                        self.performSegue(withIdentifier: FROM_REGISTER_TO_LOGIN, sender: nil)
+                    }
+                })
             }
         }
     }
