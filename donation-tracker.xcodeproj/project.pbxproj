@@ -13,6 +13,7 @@
 		ED574E9B21A62C9F00A38B1F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED574E9A21A62C9F00A38B1F /* LoginVC.swift */; };
 		ED574E9D21A62CCE00A38B1F /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED574E9C21A62CCE00A38B1F /* CreateAccountVC.swift */; };
 		ED83B8BE21A6881800188700 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83B8BD21A6881800188700 /* AuthService.swift */; };
+		ED83B8C221A69F0500188700 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED83B8C121A69F0500188700 /* DLRadioButton.m */; };
 		EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6C3FE219C857900369DD7 /* AppDelegate.swift */; };
 		EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6C400219C857900369DD7 /* SplashScreenVC.swift */; };
 		EDA6C404219C857900369DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA6C402219C857900369DD7 /* Main.storyboard */; };
@@ -31,6 +32,9 @@
 		ED574E9A21A62C9F00A38B1F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		ED574E9C21A62CCE00A38B1F /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		ED83B8BD21A6881800188700 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		ED83B8BF21A69F0400188700 /* donation-tracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "donation-tracker-Bridging-Header.h"; sourceTree = "<group>"; };
+		ED83B8C021A69F0400188700 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		ED83B8C121A69F0500188700 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
 		EDA6C3FB219C857900369DD7 /* donation-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "donation-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA6C3FE219C857900369DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA6C400219C857900369DD7 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
@@ -96,7 +100,10 @@
 		ED3BF6D7219CFC1500F6663A /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				ED83B8C021A69F0400188700 /* DLRadioButton.h */,
+				ED83B8C121A69F0500188700 /* DLRadioButton.m */,
 				ED3BF6D8219CFC4E00F6663A /* MyButton.swift */,
+				ED83B8BF21A69F0400188700 /* donation-tracker-Bridging-Header.h */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -277,6 +284,7 @@
 				EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */,
 				ED574E9B21A62C9F00A38B1F /* LoginVC.swift in Sources */,
 				EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */,
+				ED83B8C221A69F0500188700 /* DLRadioButton.m in Sources */,
 				ED574E9D21A62CCE00A38B1F /* CreateAccountVC.swift in Sources */,
 				ED30EBC821A61D2F001EF9C6 /* GradientView.swift in Sources */,
 				ED3BF6D9219CFC4E00F6663A /* MyButton.swift in Sources */,
@@ -437,6 +445,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AnT.donation-tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "donation-tracker/Button/donation-tracker-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,6 +467,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AnT.donation-tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "donation-tracker/Button/donation-tracker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

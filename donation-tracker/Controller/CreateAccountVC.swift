@@ -12,6 +12,9 @@ class CreateAccountVC: UIViewController {
 
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
+    @IBOutlet weak var userTypeBtn: DLRadioButton!
+    
+    var userType: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,5 +38,13 @@ class CreateAccountVC: UIViewController {
                 print("registered user!")
             }
         }
+    }
+    @IBAction func userBtnPressed(_ sender: DLRadioButton) {
+        if sender.tag == 1 {
+            userType = "user"
+        } else {
+            userType = "employee"
+        }
+        print(userType!)
     }
 }

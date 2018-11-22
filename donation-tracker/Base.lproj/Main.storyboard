@@ -184,6 +184,49 @@
                                     <action selector="closedBtnPressed:" destination="5pz-9j-sLz" eventType="touchUpInside" id="Gjr-ZU-rus"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpr-AJ-9Vz" customClass="DLRadioButton">
+                                <rect key="frame" x="50" y="363" width="110" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="zza-NM-dLB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="user">
+                                    <color key="titleColor" red="0.9327524304" green="0.43942439789999999" blue="0.61643615470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                        <color key="value" red="0.9327524304" green="0.43942439789999999" blue="0.61643615470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                        <color key="value" red="0.9327524304" green="0.43942439789999999" blue="0.61643615470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="userBtnPressed:" destination="5pz-9j-sLz" eventType="touchUpInside" id="95S-JT-aTB"/>
+                                    <outletCollection property="otherButtons" destination="L6H-DV-rX4" id="8o8-IV-kZZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6H-DV-rX4" customClass="DLRadioButton">
+                                <rect key="frame" x="205" y="363" width="120" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Iqn-8Y-IUE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="employee">
+                                    <color key="titleColor" red="0.9327524304" green="0.43942439789999999" blue="0.61643615470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                        <color key="value" red="0.9327524304" green="0.43942439789999999" blue="0.61643615470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                        <color key="value" red="0.9327524304" green="0.43942439789999999" blue="0.61643615470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="userBtnPressed:" destination="5pz-9j-sLz" eventType="touchUpInside" id="dCR-8G-vyi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -192,13 +235,17 @@
                             <constraint firstItem="rHQ-sX-Rnr" firstAttribute="top" secondItem="GHd-tI-XFr" secondAttribute="top" constant="45" id="2cF-hM-ILi"/>
                             <constraint firstItem="0qd-e5-e7s" firstAttribute="top" secondItem="GHd-tI-XFr" secondAttribute="top" constant="8" id="6yW-8w-Wh4"/>
                             <constraint firstItem="fr3-Hl-ViS" firstAttribute="top" secondItem="rHQ-sX-Rnr" secondAttribute="bottom" constant="51.5" id="9Jb-e6-cbr"/>
+                            <constraint firstItem="GHd-tI-XFr" firstAttribute="trailing" secondItem="L6H-DV-rX4" secondAttribute="trailing" constant="50" id="9W1-t6-nvI"/>
+                            <constraint firstItem="Xpr-AJ-9Vz" firstAttribute="top" secondItem="QPh-AN-XPe" secondAttribute="bottom" constant="20" id="A7F-pR-UbF"/>
                             <constraint firstItem="eSG-rh-PWc" firstAttribute="leading" secondItem="GHd-tI-XFr" secondAttribute="leading" constant="62.5" id="JQg-J3-ggk"/>
                             <constraint firstItem="GHd-tI-XFr" firstAttribute="trailing" secondItem="eSG-rh-PWc" secondAttribute="trailing" constant="62.5" id="XEn-oU-lBy"/>
                             <constraint firstItem="QPh-AN-XPe" firstAttribute="centerX" secondItem="7WW-gY-k3V" secondAttribute="centerX" id="aob-hg-oE2"/>
                             <constraint firstItem="eSG-rh-PWc" firstAttribute="centerX" secondItem="7WW-gY-k3V" secondAttribute="centerX" id="c5a-ri-Rfa"/>
                             <constraint firstItem="GHd-tI-XFr" firstAttribute="trailing" secondItem="0qd-e5-e7s" secondAttribute="trailing" constant="16" id="ceO-C2-vgf"/>
+                            <constraint firstItem="L6H-DV-rX4" firstAttribute="top" secondItem="QPh-AN-XPe" secondAttribute="bottom" constant="20" id="lQG-lw-PEK"/>
                             <constraint firstItem="GHd-tI-XFr" firstAttribute="bottom" secondItem="eSG-rh-PWc" secondAttribute="bottom" constant="57" id="rP8-3U-che"/>
                             <constraint firstItem="GHd-tI-XFr" firstAttribute="trailing" secondItem="fr3-Hl-ViS" secondAttribute="trailing" constant="93.5" id="u0s-MT-e3V"/>
+                            <constraint firstItem="Xpr-AJ-9Vz" firstAttribute="leading" secondItem="GHd-tI-XFr" secondAttribute="leading" constant="50" id="vrQ-8T-mb8"/>
                             <constraint firstItem="rHQ-sX-Rnr" firstAttribute="centerX" secondItem="7WW-gY-k3V" secondAttribute="centerX" id="wP3-sf-oi0"/>
                             <constraint firstItem="fr3-Hl-ViS" firstAttribute="centerX" secondItem="7WW-gY-k3V" secondAttribute="centerX" id="xTw-II-qx8"/>
                             <constraint firstItem="fr3-Hl-ViS" firstAttribute="leading" secondItem="GHd-tI-XFr" secondAttribute="leading" constant="93.5" id="zcL-oi-Vbd"/>
@@ -208,6 +255,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="n4i-r7-lXp" id="40p-1R-dLm"/>
                         <outlet property="passwordTxt" destination="lic-tJ-9zr" id="vOD-Xd-f70"/>
+                        <outlet property="userTypeBtn" destination="Xpr-AJ-9Vz" id="p7t-Wd-XEj"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ToWelcomeScreen" id="ExD-kx-Jsu"/>
                     </connections>
                 </viewController>
