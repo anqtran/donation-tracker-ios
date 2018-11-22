@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dt-ios" translatesAutoresizingMaskIntoConstraints="NO" id="mu6-am-fLz">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7j-SM-a7M" customClass="MyButton" customModule="donation_tracker" customModuleProvider="target">
                                 <rect key="frame" x="76" y="332" width="222" height="60"/>
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation Tracker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLF-ml-oIL">
-                                <rect key="frame" x="65" y="225" width="244" height="25.5"/>
+                                <rect key="frame" x="65" y="181" width="244" height="69.5"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
                                 <color key="textColor" red="0.9327524304" green="0.43942439789999999" blue="0.61643615470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
@@ -86,51 +86,140 @@
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Create AccountVC-->
         <scene sceneID="yXV-Qy-TcE">
             <objects>
-                <viewController id="5pz-9j-sLz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7WW-gY-k3V">
+                <viewController id="5pz-9j-sLz" customClass="CreateAccountVC" customModule="donation_tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7WW-gY-k3V" customClass="GradientView" customModule="donation_tracker" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dt-ios" translatesAutoresizingMaskIntoConstraints="NO" id="1Ny-0c-PIX">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr3-Hl-ViS">
-                                <rect key="frame" x="65" y="186" width="244" height="28.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
-                                <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr3-Hl-ViS">
+                                <rect key="frame" x="93.5" y="142" width="188" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation Tracker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHQ-sX-Rnr">
+                                <rect key="frame" x="80" y="65" width="215.5" height="25.5"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                <color key="shadowColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSG-rh-PWc" customClass="MyButton" customModule="donation_tracker" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="560" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.9327524304" green="0.43942439789999999" blue="0.61643615470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Z1k-0c-k0w"/>
+                                    <constraint firstAttribute="height" constant="50" id="Zla-EV-4bb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="QPh-AN-XPe">
+                                <rect key="frame" x="62.5" y="252.5" width="250" height="86"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4i-r7-lXp">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="cwM-JM-TTk"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpt-Jt-pq6">
+                                        <rect key="frame" x="0.0" y="34" width="250" height="2"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="Akw-k6-JKf"/>
+                                            <constraint firstAttribute="width" constant="250" id="DUh-Mf-2Qe"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lic-tJ-9zr">
+                                        <rect key="frame" x="0.0" y="50" width="250" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="6ff-w8-QGL"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4P-AP-wuk">
+                                        <rect key="frame" x="0.0" y="84" width="250" height="2"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="FWw-mt-fta"/>
+                                            <constraint firstAttribute="height" constant="2" id="O3v-XO-pmS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-e5-e7s">
+                                <rect key="frame" x="331" y="28" width="28" height="28"/>
+                                <state key="normal" image="closeButton"/>
+                                <connections>
+                                    <action selector="closedBtnPressed:" destination="5pz-9j-sLz" eventType="touchUpInside" id="Gjr-ZU-rus"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1Ny-0c-PIX" firstAttribute="leading" secondItem="GHd-tI-XFr" secondAttribute="leading" id="5nv-Jn-1qm"/>
-                            <constraint firstItem="1Ny-0c-PIX" firstAttribute="trailing" secondItem="GHd-tI-XFr" secondAttribute="trailing" id="bTW-UP-7ma"/>
-                            <constraint firstItem="1Ny-0c-PIX" firstAttribute="top" secondItem="GHd-tI-XFr" secondAttribute="top" id="hHS-Fe-I5s"/>
-                            <constraint firstItem="1Ny-0c-PIX" firstAttribute="bottom" secondItem="GHd-tI-XFr" secondAttribute="bottom" id="jsE-VL-cxr"/>
+                            <constraint firstItem="QPh-AN-XPe" firstAttribute="top" secondItem="fr3-Hl-ViS" secondAttribute="bottom" constant="85" id="0GV-Hu-y3I"/>
+                            <constraint firstItem="eSG-rh-PWc" firstAttribute="centerX" secondItem="7WW-gY-k3V" secondAttribute="centerX" id="0hC-NS-355"/>
+                            <constraint firstItem="rHQ-sX-Rnr" firstAttribute="top" secondItem="GHd-tI-XFr" secondAttribute="top" constant="45" id="2cF-hM-ILi"/>
+                            <constraint firstItem="0qd-e5-e7s" firstAttribute="top" secondItem="GHd-tI-XFr" secondAttribute="top" constant="8" id="6yW-8w-Wh4"/>
+                            <constraint firstItem="fr3-Hl-ViS" firstAttribute="top" secondItem="rHQ-sX-Rnr" secondAttribute="bottom" constant="51.5" id="9Jb-e6-cbr"/>
+                            <constraint firstItem="eSG-rh-PWc" firstAttribute="leading" secondItem="GHd-tI-XFr" secondAttribute="leading" constant="62.5" id="JQg-J3-ggk"/>
+                            <constraint firstItem="GHd-tI-XFr" firstAttribute="trailing" secondItem="eSG-rh-PWc" secondAttribute="trailing" constant="62.5" id="XEn-oU-lBy"/>
+                            <constraint firstItem="QPh-AN-XPe" firstAttribute="centerX" secondItem="7WW-gY-k3V" secondAttribute="centerX" id="aob-hg-oE2"/>
+                            <constraint firstItem="eSG-rh-PWc" firstAttribute="centerX" secondItem="7WW-gY-k3V" secondAttribute="centerX" id="c5a-ri-Rfa"/>
+                            <constraint firstItem="GHd-tI-XFr" firstAttribute="trailing" secondItem="0qd-e5-e7s" secondAttribute="trailing" constant="16" id="ceO-C2-vgf"/>
+                            <constraint firstItem="GHd-tI-XFr" firstAttribute="bottom" secondItem="eSG-rh-PWc" secondAttribute="bottom" constant="57" id="rP8-3U-che"/>
+                            <constraint firstItem="GHd-tI-XFr" firstAttribute="trailing" secondItem="fr3-Hl-ViS" secondAttribute="trailing" constant="93.5" id="u0s-MT-e3V"/>
+                            <constraint firstItem="rHQ-sX-Rnr" firstAttribute="centerX" secondItem="7WW-gY-k3V" secondAttribute="centerX" id="wP3-sf-oi0"/>
+                            <constraint firstItem="fr3-Hl-ViS" firstAttribute="centerX" secondItem="7WW-gY-k3V" secondAttribute="centerX" id="xTw-II-qx8"/>
+                            <constraint firstItem="fr3-Hl-ViS" firstAttribute="leading" secondItem="GHd-tI-XFr" secondAttribute="leading" constant="93.5" id="zcL-oi-Vbd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GHd-tI-XFr"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="ToWelcomeScreen" id="ExD-kx-Jsu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVa-OS-gzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2064.8000000000002" y="536.58170914542734"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="EyL-pD-CfG">
             <objects>
-                <viewController id="hKw-0u-rKb" sceneMemberID="viewController">
+                <viewController id="hKw-0u-rKb" customClass="LoginVC" customModule="donation_tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="30X-4w-tJa" customClass="GradientView" customModule="donation_tracker" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation Tracker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43C-oS-ByH">
-                                <rect key="frame" x="65" y="164" width="244" height="25.5"/>
+                                <rect key="frame" x="65" y="120" width="244" height="25.5"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
@@ -138,14 +227,14 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOZ-No-atH" customClass="MyButton" customModule="donation_tracker" customModuleProvider="target">
-                                <rect key="frame" x="62.5" y="375.5" width="250" height="50"/>
+                                <rect key="frame" x="62.5" y="331.5" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.93275243043899536" green="0.4394243978943515" blue="0.61643615466702761" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6Wa-vY-qDP"/>
                                     <constraint firstAttribute="width" constant="250" id="ATK-fr-C8R"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Sign In">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -153,7 +242,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYM-BP-ZUH" customClass="MyButton" customModule="donation_tracker">
-                                <rect key="frame" x="62.5" y="425.5" width="250" height="25"/>
+                                <rect key="frame" x="62.5" y="381.5" width="250" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="bnl-74-OZ3"/>
                                     <constraint firstAttribute="width" constant="250" id="r26-kp-rba"/>
@@ -162,9 +251,12 @@
                                 <state key="normal" title="Don't have an account? Sign up here">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccntBtnPressed:" destination="hKw-0u-rKb" eventType="touchUpInside" id="NY6-p7-N4e"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="6fL-IR-LmC">
-                                <rect key="frame" x="62.5" y="239.5" width="250" height="86"/>
+                                <rect key="frame" x="62.5" y="195.5" width="250" height="86"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ksf-8g-cZO">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
@@ -227,6 +319,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LzP-NC-Xjl"/>
                     </view>
+                    <connections>
+                        <segue destination="5pz-9j-sLz" kind="show" identifier="toCreateAccount" id="Zos-x8-zDF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBK-cE-gfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -252,6 +347,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="closeButton" width="28" height="28"/>
         <image name="dt-ios" width="414" height="628"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Zos-x8-zDF"/>
+        <segue reference="ExD-kx-Jsu"/>
+    </inferredMetricsTieBreakers>
 </document>
