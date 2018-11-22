@@ -12,6 +12,7 @@
 		ED574E9921A62C4A00A38B1F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED574E9821A62C4A00A38B1F /* Constants.swift */; };
 		ED574E9B21A62C9F00A38B1F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED574E9A21A62C9F00A38B1F /* LoginVC.swift */; };
 		ED574E9D21A62CCE00A38B1F /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED574E9C21A62CCE00A38B1F /* CreateAccountVC.swift */; };
+		ED83B8BE21A6881800188700 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83B8BD21A6881800188700 /* AuthService.swift */; };
 		EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6C3FE219C857900369DD7 /* AppDelegate.swift */; };
 		EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6C400219C857900369DD7 /* SplashScreenVC.swift */; };
 		EDA6C404219C857900369DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA6C402219C857900369DD7 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		ED574E9821A62C4A00A38B1F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ED574E9A21A62C9F00A38B1F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		ED574E9C21A62CCE00A38B1F /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		ED83B8BD21A6881800188700 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		EDA6C3FB219C857900369DD7 /* donation-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "donation-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA6C3FE219C857900369DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA6C400219C857900369DD7 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		ED83B8BC21A687FF00188700 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED83B8BD21A6881800188700 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		EDA6C3F2219C857800369DD7 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 		EDA6C3FD219C857900369DD7 /* donation-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				ED83B8BC21A687FF00188700 /* Services */,
 				ED574E9721A62C0A00A38B1F /* Utilities */,
 				ED30EBC621A61CE4001EF9C6 /* Controller */,
 				ED30EBC521A61CDF001EF9C6 /* View */,
@@ -269,6 +280,7 @@
 				ED574E9D21A62CCE00A38B1F /* CreateAccountVC.swift in Sources */,
 				ED30EBC821A61D2F001EF9C6 /* GradientView.swift in Sources */,
 				ED3BF6D9219CFC4E00F6663A /* MyButton.swift in Sources */,
+				ED83B8BE21A6881800188700 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
