@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED30EBC321A6029F001EF9C6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED30EBC221A6029F001EF9C6 /* SWRevealViewController.m */; };
+		ED30EBC821A61D2F001EF9C6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED30EBC721A61D2F001EF9C6 /* GradientView.swift */; };
 		ED3BF6D9219CFC4E00F6663A /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3BF6D8219CFC4E00F6663A /* MyButton.swift */; };
 		EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6C3FE219C857900369DD7 /* AppDelegate.swift */; };
 		EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6C400219C857900369DD7 /* SplashScreenVC.swift */; };
@@ -21,9 +21,7 @@
 		14013D87C9C268132063E80D /* Pods-donation-tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-donation-tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-donation-tracker/Pods-donation-tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		4D88130617CF36C4B87B1DB0 /* Pods_donation_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_donation_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9056957BEC4B9D23B24C3F2E /* Pods-donation-tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-donation-tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-donation-tracker/Pods-donation-tracker.release.xcconfig"; sourceTree = "<group>"; };
-		ED30EBC021A6029E001EF9C6 /* donation-tracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "donation-tracker-Bridging-Header.h"; sourceTree = "<group>"; };
-		ED30EBC121A6029F001EF9C6 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		ED30EBC221A6029F001EF9C6 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		ED30EBC721A61D2F001EF9C6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		ED3BF6D8219CFC4E00F6663A /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		EDA6C3FB219C857900369DD7 /* donation-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "donation-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA6C3FE219C857900369DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,14 +61,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		ED30EBBF21A60267001EF9C6 /* Supporting Files */ = {
+		ED30EBC421A61CD3001EF9C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ED30EBC121A6029F001EF9C6 /* SWRevealViewController.h */,
-				ED30EBC221A6029F001EF9C6 /* SWRevealViewController.m */,
-				ED30EBC021A6029E001EF9C6 /* donation-tracker-Bridging-Header.h */,
 			);
-			path = "Supporting Files";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED30EBC521A61CDF001EF9C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED30EBC721A61D2F001EF9C6 /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED30EBC621A61CE4001EF9C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		ED3BF6D7219CFC1500F6663A /* Button */ = {
@@ -84,7 +94,6 @@
 		EDA6C3F2219C857800369DD7 = {
 			isa = PBXGroup;
 			children = (
-				ED30EBBF21A60267001EF9C6 /* Supporting Files */,
 				EDA6C3FD219C857900369DD7 /* donation-tracker */,
 				EDA6C3FC219C857900369DD7 /* Products */,
 				8BF44BFE96FEF011E4EF2A25 /* Pods */,
@@ -103,6 +112,9 @@
 		EDA6C3FD219C857900369DD7 /* donation-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				ED30EBC621A61CE4001EF9C6 /* Controller */,
+				ED30EBC521A61CDF001EF9C6 /* View */,
+				ED30EBC421A61CD3001EF9C6 /* Model */,
 				ED3BF6D7219CFC1500F6663A /* Button */,
 				EDA6C3FE219C857900369DD7 /* AppDelegate.swift */,
 				EDA6C400219C857900369DD7 /* SplashScreenVC.swift */,
@@ -235,8 +247,8 @@
 			files = (
 				EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */,
 				EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */,
+				ED30EBC821A61D2F001EF9C6 /* GradientView.swift in Sources */,
 				ED3BF6D9219CFC4E00F6663A /* MyButton.swift in Sources */,
-				ED30EBC321A6029F001EF9C6 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +405,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AnT.donation-tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/donation-tracker-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -415,7 +426,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AnT.donation-tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/donation-tracker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
