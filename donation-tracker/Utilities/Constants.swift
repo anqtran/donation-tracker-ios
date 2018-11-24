@@ -17,6 +17,8 @@ let TO_WELCOME_SCREEN = "ToWelcomeScreen"
 let FROM_REGISTER_TO_LOGIN = "registerToLogin"
 let FROM_LOGIN_TO_EMPLOYEE_DASHBOARD = "loginToEmployeeDashBoard"
 let FROM_LOGIN_TO_USER_DASHBOARD = "loginToUserDashBoard"
+let FROM_EMPLOYEE_DASHBOARD_TO_ADDITEM = "employeeDashBoardToAddItem"
+let FROM_EMPLOYEE_DASHBOARD_TO_VIEWITEM = "employeeDashBoardToViewItem"
 
 
 // User Defaults

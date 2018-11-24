@@ -17,6 +17,8 @@
 		ED83B8BE21A6881800188700 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83B8BD21A6881800188700 /* AuthService.swift */; };
 		ED83B8C221A69F0500188700 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED83B8C121A69F0500188700 /* DLRadioButton.m */; };
 		ED83B8C421A6AB0D00188700 /* PickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83B8C321A6AB0D00188700 /* PickerTextField.swift */; };
+		ED9A1CD821A88397007DD1C4 /* AddItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9A1CD721A88397007DD1C4 /* AddItemVC.swift */; };
+		ED9A1CDA21A883AB007DD1C4 /* ViewItemsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9A1CD921A883AB007DD1C4 /* ViewItemsVC.swift */; };
 		EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6C3FE219C857900369DD7 /* AppDelegate.swift */; };
 		EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6C400219C857900369DD7 /* SplashScreenVC.swift */; };
 		EDA6C404219C857900369DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA6C402219C857900369DD7 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 		ED83B8C021A69F0400188700 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
 		ED83B8C121A69F0500188700 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
 		ED83B8C321A6AB0D00188700 /* PickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTextField.swift; sourceTree = "<group>"; };
+		ED9A1CD721A88397007DD1C4 /* AddItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemVC.swift; sourceTree = "<group>"; };
+		ED9A1CD921A883AB007DD1C4 /* ViewItemsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItemsVC.swift; sourceTree = "<group>"; };
 		EDA6C3FB219C857900369DD7 /* donation-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "donation-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA6C3FE219C857900369DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA6C400219C857900369DD7 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				ED574E9C21A62CCE00A38B1F /* CreateAccountVC.swift */,
 				ED0D8AE321A85F59006FEA08 /* UserDashboardVC.swift */,
 				ED0D8AE521A85F6B006FEA08 /* EmployeeDashboardVC.swift */,
+				ED9A1CD721A88397007DD1C4 /* AddItemVC.swift */,
+				ED9A1CD921A883AB007DD1C4 /* ViewItemsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -292,6 +298,8 @@
 				ED574E9921A62C4A00A38B1F /* Constants.swift in Sources */,
 				ED83B8C421A6AB0D00188700 /* PickerTextField.swift in Sources */,
 				EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */,
+				ED9A1CD821A88397007DD1C4 /* AddItemVC.swift in Sources */,
+				ED9A1CDA21A883AB007DD1C4 /* ViewItemsVC.swift in Sources */,
 				ED574E9B21A62C9F00A38B1F /* LoginVC.swift in Sources */,
 				EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */,
 				ED0D8AE621A85F6B006FEA08 /* EmployeeDashboardVC.swift in Sources */,
