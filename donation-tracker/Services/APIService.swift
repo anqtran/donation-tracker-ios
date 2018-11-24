@@ -9,8 +9,8 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
-class AuthService {
-    static let instance = AuthService()
+class APIService {
+    static let instance = APIService()
     
     let defaults = UserDefaults.standard
     
@@ -49,7 +49,15 @@ class AuthService {
             defaults.set(newValue, forKey: USER_EMAIL)
         }
     }
-    
+
+    var userLocation: String {
+        get {
+            return defaults.value(forKey: USER_LOCATION) as! String
+        }
+        set {
+            defaults.set(newValue, forKey: USER_LOCATION)
+        }
+    }
 
     func registerAccount(email: String, password: String, completion: @escaping CompletionHandler) {
         
@@ -130,6 +138,7 @@ class AuthService {
                 guard let dataFromServer = response.data else { return }
                 let json = try! JSON(data: dataFromServer)
                 self.userType = json["userType"].stringValue
+                self.userLocation = json["location"].stringValue
                 completion(true)
             } else {
                 completion(false)
@@ -138,5 +147,24 @@ class AuthService {
         }
     }
     
+    func addItem(description: String, category: String, location: String, longDescription: String, value: Int, completion: @escaping CompletionHandler) {
+        
+        let body: [String: Any] = [
+            "description": description,
+            "category": category,
+            "location": location,
+            "longDescription": longDescription,
+            "value" : value
+        ]
+        Alamofire.request(URL_ADD_ITEM, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseString { (response) in
+            if (response.result.error == nil) {
+                print("Item successfully added")
+                completion(true)
+            } else {
+                completion(false)
+                debugPrint(response.result.error as Any)
+            }
+        }
+    }
     
 }

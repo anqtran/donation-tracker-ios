@@ -31,9 +31,9 @@ class LoginVC: UIViewController {
         guard let pass = passwordTxt.text, passwordTxt.text != "" else {
             return
         }
-        AuthService.instance.loginUser(email: email, password: pass) { (success) in
+        APIService.instance.loginUser(email: email, password: pass) { (success) in
             if (success) {
-                let type = AuthService.instance.userType
+                let type = APIService.instance.userType
                 if (type == "employee") {
                     self.performSegue(withIdentifier: FROM_LOGIN_TO_EMPLOYEE_DASHBOARD, sender: nil)
                 } else {

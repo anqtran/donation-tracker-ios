@@ -19,13 +19,14 @@ let FROM_LOGIN_TO_EMPLOYEE_DASHBOARD = "loginToEmployeeDashBoard"
 let FROM_LOGIN_TO_USER_DASHBOARD = "loginToUserDashBoard"
 let FROM_EMPLOYEE_DASHBOARD_TO_ADDITEM = "employeeDashBoardToAddItem"
 let FROM_EMPLOYEE_DASHBOARD_TO_VIEWITEM = "employeeDashBoardToViewItem"
-
+let FROM_ADD_ITEM_TO_EMPLOYEE_DASHBOARD = "addItemToEmployeeDashboard"
 
 // User Defaults
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
 let USER_TYPE = "userType"
+let USER_LOCATION = "userLocation"
 
 // URL Constants
 let BASE_URL = "http://localhost:3005/v1/"
@@ -33,6 +34,7 @@ let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_CREATE_USER = "\(BASE_URL)user/add"
 let URL_GET_USER = "\(BASE_URL)user/byEmail/"
+let URL_ADD_ITEM = "\(BASE_URL)item/add"
 // header
 let HEADER = [
     "Content-Type": "application/json; charset=utf-8"

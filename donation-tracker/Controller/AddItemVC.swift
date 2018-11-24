@@ -35,9 +35,6 @@ class AddItemVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         dissmissPickerView()
     }
     
-    @IBAction func AddItemBtnPressed(_ sender: Any) {
-    }
-    
     var itemCategory: String?
     var categories = ["Clothing", "Hat", "Kitchen", "Electronics", " Household", "Other"]
     
@@ -59,5 +56,31 @@ class AddItemVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
     
     @objc func dismissKeyBoard() {
         view.endEditing(true)
+    }
+    
+    @IBAction func AddItemBtnPressed(_ sender: Any) {
+        
+        guard let shortDescription = shortDescTxt.text, shortDescTxt.text != "" else {
+            return
+        }
+        
+        guard let value = Int(valueTxt.text!), valueTxt.text != "" else {
+            return
+        }
+        
+        guard let category = categoryTxt.text, categoryTxt.text != "" else {
+            return
+        }
+        
+        let longDescription = moreInfoTxt.text!
+        
+        let location = APIService.instance.userLocation
+        
+        APIService.instance.addItem(description: shortDescription, category: category, location: location, longDescription: longDescription, value: value) { (done) in
+            if(done) {
+                self.performSegue(withIdentifier: FROM_ADD_ITEM_TO_EMPLOYEE_DASHBOARD, sender: nil)
+            }
+        }
+        
     }
 }

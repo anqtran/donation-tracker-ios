@@ -560,7 +560,7 @@
                                 <color key="shadowColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="JgG-IM-iq7">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="JgG-IM-iq7">
                                 <rect key="frame" x="62.5" y="236" width="250" height="186"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="short description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSI-41-bnr">
@@ -592,7 +592,7 @@
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -677,11 +677,9 @@
                         <constraints>
                             <constraint firstItem="uya-n9-cV9" firstAttribute="trailing" secondItem="se0-pL-B84" secondAttribute="trailing" constant="62.5" id="1cc-Ih-TwF"/>
                             <constraint firstItem="uya-n9-cV9" firstAttribute="bottom" secondItem="se0-pL-B84" secondAttribute="bottom" constant="100" id="6VD-pN-zl8"/>
-                            <constraint firstItem="uya-n9-cV9" firstAttribute="trailing" secondItem="JgG-IM-iq7" secondAttribute="trailing" constant="62.5" id="B7W-6r-vsk"/>
-                            <constraint firstItem="JgG-IM-iq7" firstAttribute="centerX" secondItem="QUC-N9-bWz" secondAttribute="centerX" id="BfU-VZ-bgy"/>
-                            <constraint firstItem="JgG-IM-iq7" firstAttribute="leading" secondItem="uya-n9-cV9" secondAttribute="leading" constant="62.5" id="GeV-Cp-WNF"/>
                             <constraint firstItem="uRe-ac-hRN" firstAttribute="centerX" secondItem="QUC-N9-bWz" secondAttribute="centerX" id="NU4-2E-vtH"/>
-                            <constraint firstItem="se0-pL-B84" firstAttribute="centerX" secondItem="QUC-N9-bWz" secondAttribute="centerX" id="ZZB-gZ-ehV"/>
+                            <constraint firstItem="JgG-IM-iq7" firstAttribute="top" secondItem="uRe-ac-hRN" secondAttribute="bottom" constant="125.5" id="cOc-C9-6DC"/>
+                            <constraint firstItem="JgG-IM-iq7" firstAttribute="centerX" secondItem="QUC-N9-bWz" secondAttribute="centerX" id="pha-nx-3EP"/>
                             <constraint firstItem="se0-pL-B84" firstAttribute="leading" secondItem="uya-n9-cV9" secondAttribute="leading" constant="62.5" id="rge-v5-bpD"/>
                             <constraint firstItem="uRe-ac-hRN" firstAttribute="top" secondItem="uya-n9-cV9" secondAttribute="top" constant="65" id="rzz-oA-iuz"/>
                         </constraints>
@@ -692,6 +690,7 @@
                         <outlet property="moreInfoTxt" destination="2MF-e8-DcO" id="XrU-ml-Vwq"/>
                         <outlet property="shortDescTxt" destination="bSI-41-bnr" id="8kU-rF-QHq"/>
                         <outlet property="valueTxt" destination="ec8-tI-2mD" id="R2D-KI-2sg"/>
+                        <segue destination="sZ1-i7-iS3" kind="show" identifier="addItemToEmployeeDashboard" id="ACD-Zu-81e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7U-Ve-pTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -730,6 +729,7 @@
         <image name="dt-ios" width="414" height="628"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ACD-Zu-81e"/>
         <segue reference="zrt-pg-DxA"/>
         <segue reference="Zos-x8-zDF"/>
         <segue reference="ExD-kx-Jsu"/>
