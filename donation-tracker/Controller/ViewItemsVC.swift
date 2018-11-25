@@ -8,23 +8,32 @@
 
 import UIKit
 
-class ViewItemsVC: UIViewController {
+class ViewItemsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        print(ItemService.instance.items.count)
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "DonationItemCell", for: indexPath) as? DonationItemCell {
+            print("in table View")
+            print(ItemService.instance.items.count)
+            let item = ItemService.instance.items[indexPath.row]
+            cell.configureCell(item: item)
+            return cell
+        } else {
+            return UITableViewCell()
+        }
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ItemService.instance.items.count
     }
-    */
-
+    
 }

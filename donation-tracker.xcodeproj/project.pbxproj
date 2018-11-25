@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		ED0D8AE421A85F59006FEA08 /* UserDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D8AE321A85F59006FEA08 /* UserDashboardVC.swift */; };
 		ED0D8AE621A85F6B006FEA08 /* EmployeeDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D8AE521A85F6B006FEA08 /* EmployeeDashboardVC.swift */; };
+		ED1C68BE21AA0DA1003079E3 /* DonationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1C68BD21AA0DA1003079E3 /* DonationItem.swift */; };
+		ED1C68C021AA1381003079E3 /* ItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1C68BF21AA1381003079E3 /* ItemService.swift */; };
+		ED1C68C221AA3796003079E3 /* DonationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1C68C121AA3796003079E3 /* DonationItemCell.swift */; };
 		ED30EBC821A61D2F001EF9C6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED30EBC721A61D2F001EF9C6 /* GradientView.swift */; };
 		ED3BF6D9219CFC4E00F6663A /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3BF6D8219CFC4E00F6663A /* MyButton.swift */; };
 		ED574E9921A62C4A00A38B1F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED574E9821A62C4A00A38B1F /* Constants.swift */; };
@@ -33,6 +36,9 @@
 		9056957BEC4B9D23B24C3F2E /* Pods-donation-tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-donation-tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-donation-tracker/Pods-donation-tracker.release.xcconfig"; sourceTree = "<group>"; };
 		ED0D8AE321A85F59006FEA08 /* UserDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDashboardVC.swift; sourceTree = "<group>"; };
 		ED0D8AE521A85F6B006FEA08 /* EmployeeDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDashboardVC.swift; sourceTree = "<group>"; };
+		ED1C68BD21AA0DA1003079E3 /* DonationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItem.swift; sourceTree = "<group>"; };
+		ED1C68BF21AA1381003079E3 /* ItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemService.swift; sourceTree = "<group>"; };
+		ED1C68C121AA3796003079E3 /* DonationItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCell.swift; sourceTree = "<group>"; };
 		ED30EBC721A61D2F001EF9C6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		ED3BF6D8219CFC4E00F6663A /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		ED574E9821A62C4A00A38B1F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 		ED30EBC421A61CD3001EF9C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ED1C68BD21AA0DA1003079E3 /* DonationItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +102,7 @@
 			children = (
 				ED30EBC721A61D2F001EF9C6 /* GradientView.swift */,
 				ED83B8C321A6AB0D00188700 /* PickerTextField.swift */,
+				ED1C68C121AA3796003079E3 /* DonationItemCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				ED83B8BD21A6881800188700 /* APIService.swift */,
+				ED1C68BF21AA1381003079E3 /* ItemService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -300,12 +309,15 @@
 				EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */,
 				ED9A1CD821A88397007DD1C4 /* AddItemVC.swift in Sources */,
 				ED9A1CDA21A883AB007DD1C4 /* ViewItemsVC.swift in Sources */,
+				ED1C68C221AA3796003079E3 /* DonationItemCell.swift in Sources */,
 				ED574E9B21A62C9F00A38B1F /* LoginVC.swift in Sources */,
 				EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */,
 				ED0D8AE621A85F6B006FEA08 /* EmployeeDashboardVC.swift in Sources */,
 				ED83B8C221A69F0500188700 /* DLRadioButton.m in Sources */,
 				ED574E9D21A62CCE00A38B1F /* CreateAccountVC.swift in Sources */,
+				ED1C68BE21AA0DA1003079E3 /* DonationItem.swift in Sources */,
 				ED0D8AE421A85F59006FEA08 /* UserDashboardVC.swift in Sources */,
+				ED1C68C021AA1381003079E3 /* ItemService.swift in Sources */,
 				ED30EBC821A61D2F001EF9C6 /* GradientView.swift in Sources */,
 				ED3BF6D9219CFC4E00F6663A /* MyButton.swift in Sources */,
 				ED83B8BE21A6881800188700 /* APIService.swift in Sources */,

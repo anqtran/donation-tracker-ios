@@ -9,11 +9,17 @@
 import UIKit
 
 class EmployeeDashboardVC: UIViewController {
-
+    let employeeLocation = APIService.instance.userLocation
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        ItemService.instance.findAllItemAtLocation(location: employeeLocation) { (done) in
+            if(done) {
+                print("finished fetching items")
+            } else {
+                
+            }
+        }
     }
     
     @IBAction func addItemBtnPressed(_ sender: Any) {

@@ -35,7 +35,12 @@ let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_CREATE_USER = "\(BASE_URL)user/add"
 let URL_GET_USER = "\(BASE_URL)user/byEmail/"
 let URL_ADD_ITEM = "\(BASE_URL)item/add"
+let URL_GET_ITEMS = "\(BASE_URL)item/byLocation"
 // header
 let HEADER = [
     "Content-Type": "application/json; charset=utf-8"
+]
+let NEW_HEADER = [
+    "Content-Type": "application/json",
+     "accept": "application/json"
 ]
