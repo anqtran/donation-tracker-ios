@@ -37,6 +37,8 @@ class LoginVC: UIViewController {
                 if (type == "employee") {
                     self.performSegue(withIdentifier: FROM_LOGIN_TO_EMPLOYEE_DASHBOARD, sender: nil)
                 } else {
+                    
+                    
                     self.performSegue(withIdentifier: FROM_LOGIN_TO_USER_DASHBOARD, sender: nil)
                 }
             }

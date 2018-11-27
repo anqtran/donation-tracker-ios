@@ -19,3 +19,4 @@ struct DonationItem : Decodable {
     public private(set) var timestamp: String!
     
 }
+

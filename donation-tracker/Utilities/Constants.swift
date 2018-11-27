@@ -2,8 +2,8 @@
 //  Constants.swift
 //  donation-tracker
 //
-//  Created by An Tran on 11/21/18.
-//  Copyright © 2018 An Tran. All rights reserved.
+//  Created by An Tran on 11/22/18.
+//  Copyright © 2018 An Nguyen. All rights reserved.
 //
 
 import Foundation
@@ -20,6 +20,9 @@ let FROM_LOGIN_TO_USER_DASHBOARD = "loginToUserDashBoard"
 let FROM_EMPLOYEE_DASHBOARD_TO_ADDITEM = "employeeDashBoardToAddItem"
 let FROM_EMPLOYEE_DASHBOARD_TO_VIEWITEM = "employeeDashBoardToViewItem"
 let FROM_ADD_ITEM_TO_EMPLOYEE_DASHBOARD = "addItemToEmployeeDashboard"
+let FROM_USER_DASHBOARD_TO_SEARCHITEM = "userDashToSearchItem"
+let FROM_USER_DASHBOARD_TO_VIEWLOCATION = "userDashToViewLocation"
+let FROM_USER_DASHBOARD_TO_VIEWMAP = "userDashToViewMap"
 
 // User Defaults
 let TOKEN_KEY = "token"

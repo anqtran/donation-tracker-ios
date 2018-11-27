@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dt-ios" translatesAutoresizingMaskIntoConstraints="NO" id="mu6-am-fLz">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7j-SM-a7M" customClass="MyButton" customModule="donation_tracker" customModuleProvider="target">
                                 <rect key="frame" x="76" y="332" width="222" height="60"/>
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation Tracker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLF-ml-oIL">
-                                <rect key="frame" x="65" y="181" width="244" height="69.5"/>
+                                <rect key="frame" x="65" y="225" width="244" height="25.5"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
                                 <color key="textColor" red="0.9327524304" green="0.43942439789999999" blue="0.61643615470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
@@ -95,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr3-Hl-ViS">
-                                <rect key="frame" x="93.5" y="142" width="188" height="30"/>
+                                <rect key="frame" x="93.5" y="186" width="188" height="30"/>
                                 <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,7 +103,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation Tracker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHQ-sX-Rnr">
-                                <rect key="frame" x="80" y="65" width="215.5" height="25.5"/>
+                                <rect key="frame" x="80" y="109" width="215.5" height="25.5"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
@@ -129,7 +129,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="QPh-AN-XPe">
-                                <rect key="frame" x="62.5" y="257" width="250" height="86"/>
+                                <rect key="frame" x="62.5" y="301" width="250" height="86"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4i-r7-lXp">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
@@ -178,14 +178,14 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-e5-e7s">
-                                <rect key="frame" x="331" y="28" width="28" height="28"/>
+                                <rect key="frame" x="331" y="72" width="28" height="28"/>
                                 <state key="normal" image="closeButton"/>
                                 <connections>
                                     <action selector="closedBtnPressed:" destination="5pz-9j-sLz" eventType="touchUpInside" id="Gjr-ZU-rus"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hfa-ws-mTp">
-                                <rect key="frame" x="62.5" y="425" width="250" height="30"/>
+                                <rect key="frame" x="62.5" y="469" width="250" height="30"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="employee location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ra-UO-LMe" customClass="PickerTextField" customModule="donation_tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
@@ -216,7 +216,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpr-AJ-9Vz" customClass="DLRadioButton">
-                                <rect key="frame" x="50" y="363" width="110" height="32"/>
+                                <rect key="frame" x="50" y="407" width="110" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="zza-NM-dLB"/>
                                 </constraints>
@@ -238,7 +238,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6H-DV-rX4" customClass="DLRadioButton">
-                                <rect key="frame" x="190" y="363" width="120" height="32"/>
+                                <rect key="frame" x="190" y="407" width="120" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Iqn-8Y-IUE"/>
                                 </constraints>
@@ -307,7 +307,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation Tracker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43C-oS-ByH">
-                                <rect key="frame" x="65" y="120" width="244" height="25.5"/>
+                                <rect key="frame" x="65" y="164" width="244" height="25.5"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
@@ -315,7 +315,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOZ-No-atH" customClass="MyButton" customModule="donation_tracker" customModuleProvider="target">
-                                <rect key="frame" x="62.5" y="331.5" width="250" height="50"/>
+                                <rect key="frame" x="62.5" y="375.5" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.93275243043899536" green="0.4394243978943515" blue="0.61643615466702761" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6Wa-vY-qDP"/>
@@ -333,7 +333,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYM-BP-ZUH" customClass="MyButton" customModule="donation_tracker">
-                                <rect key="frame" x="62.5" y="381.5" width="250" height="25"/>
+                                <rect key="frame" x="62.5" y="425.5" width="250" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="bnl-74-OZ3"/>
                                     <constraint firstAttribute="width" constant="250" id="r26-kp-rba"/>
@@ -347,7 +347,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="6fL-IR-LmC">
-                                <rect key="frame" x="62.5" y="195.5" width="250" height="86"/>
+                                <rect key="frame" x="62.5" y="239.5" width="250" height="86"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ksf-8g-cZO">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
@@ -439,14 +439,121 @@
                                 <color key="shadowColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efW-iO-8K2" customClass="MyButton" customModule="donation_tracker" customModuleProvider="target">
+                                <rect key="frame" x="62" y="422" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.9327524304" green="0.43942439789999999" blue="0.61643615470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6IC-J5-n9j"/>
+                                    <constraint firstAttribute="width" constant="250" id="Jgk-Hn-srJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="View Map">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addItemBtnPressed:" destination="sZ1-i7-iS3" eventType="touchUpInside" id="tH9-Qj-AHm"/>
+                                    <action selector="loginBtnPressed:" destination="hKw-0u-rKb" eventType="touchUpInside" id="Oy5-yA-z4z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2m-wo-twh" customClass="MyButton" customModule="donation_tracker" customModuleProvider="target">
+                                <rect key="frame" x="62" y="198" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.9327524304" green="0.43942439789999999" blue="0.61643615470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="B2I-OG-vjJ"/>
+                                    <constraint firstAttribute="width" constant="250" id="dYk-tb-n8k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Search Item">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addItemBtnPressed:" destination="sZ1-i7-iS3" eventType="touchUpInside" id="JwD-3M-vJJ"/>
+                                    <action selector="loginBtnPressed:" destination="hKw-0u-rKb" eventType="touchUpInside" id="fGY-l2-lmJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i49-I1-nh9" customClass="MyButton" customModule="donation_tracker" customModuleProvider="target">
+                                <rect key="frame" x="65" y="308" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.9327524304" green="0.43942439789999999" blue="0.61643615470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8cd-em-JJY"/>
+                                    <constraint firstAttribute="width" constant="250" id="Blc-KW-yVW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="View Location">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addItemBtnPressed:" destination="sZ1-i7-iS3" eventType="touchUpInside" id="iWr-dM-P4R"/>
+                                    <action selector="loginBtnPressed:" destination="hKw-0u-rKb" eventType="touchUpInside" id="lb0-ls-HaG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2ex-jI-w03"/>
                     </view>
+                    <connections>
+                        <segue destination="pxZ-GT-Axq" kind="show" identifier="userDashToSearchItem" id="5Ng-rk-3JY"/>
+                        <segue destination="u6I-MM-5iK" kind="show" identifier="userDashToViewLocation" id="kLg-f7-vn4"/>
+                        <segue destination="VLe-mB-1HW" kind="show" identifier="userDashToViewMap" id="pzb-wh-Mi6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6G-zm-aX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3137" y="537"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Hh-sc-fS2">
+            <objects>
+                <viewController id="pxZ-GT-Axq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Egu-mH-N0x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="07k-Tb-0Wr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOq-b5-TzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2514" y="1417"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xbo-hx-ebn">
+            <objects>
+                <viewController id="u6I-MM-5iK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BYX-Ub-SFS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ww6-7t-6gA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uT2-8x-REJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3366" y="1416"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6bd-70-nt0">
+            <objects>
+                <viewController id="VLe-mB-1HW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rO3-35-Ve2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BjM-fT-5gG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tp7-Ey-Q8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4286" y="1416"/>
         </scene>
         <!--Employee DashboardVC-->
         <scene sceneID="f5O-0T-kZj">
@@ -457,7 +564,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Dashboard" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onx-TE-iM2">
-                                <rect key="frame" x="57.5" y="95" width="260" height="25.5"/>
+                                <rect key="frame" x="57.5" y="139" width="260" height="25.5"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
@@ -465,7 +572,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="97" translatesAutoresizingMaskIntoConstraints="NO" id="41l-ky-qRg">
-                                <rect key="frame" x="62.5" y="227" width="250" height="197"/>
+                                <rect key="frame" x="62.5" y="271" width="250" height="197"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cca-7A-Rg3" customClass="MyButton" customModule="donation_tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
@@ -553,7 +660,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Item" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRe-ac-hRN">
-                                <rect key="frame" x="131" y="85" width="113.5" height="25.5"/>
+                                <rect key="frame" x="131" y="129" width="113.5" height="25.5"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
@@ -561,7 +668,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="JgG-IM-iq7">
-                                <rect key="frame" x="62.5" y="236" width="250" height="186"/>
+                                <rect key="frame" x="62.5" y="280" width="250" height="186"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="short description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSI-41-bnr">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
@@ -706,7 +813,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Items" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoT-dr-q0h">
-                                <rect key="frame" x="119" y="48" width="137" height="25.5"/>
+                                <rect key="frame" x="119" y="92" width="137" height="25.5"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
                                 <color key="textColor" red="0.9327524304" green="0.43942439789999999" blue="0.61643615470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
@@ -714,7 +821,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z0i-Ef-fqK">
-                                <rect key="frame" x="7" y="118" width="361" height="480"/>
+                                <rect key="frame" x="7" y="162" width="361" height="436"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DonationItemCell" id="ArM-Tj-esX" customClass="DonationItemCell" customModule="donation_tracker" customModuleProvider="target">
@@ -725,7 +832,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwH-ue-yUc">
-                                                    <rect key="frame" x="15" y="13" width="280" height="22"/>
+                                                    <rect key="frame" x="15" y="13" width="298" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -771,9 +878,9 @@
         <image name="dt-ios" width="414" height="628"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ACD-Zu-81e"/>
-        <segue reference="zrt-pg-DxA"/>
+        <segue reference="vAy-J4-m5w"/>
+        <segue reference="eNo-KE-265"/>
         <segue reference="Zos-x8-zDF"/>
-        <segue reference="ExD-kx-Jsu"/>
+        <segue reference="8tE-tc-wry"/>
     </inferredMetricsTieBreakers>
 </document>
