@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8EBAEF9021AD11C000504EA2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEF8F21AD11C000504EA2 /* Location.swift */; };
+		8EBAEF9821AD189300504EA2 /* SearchItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEF9721AD189300504EA2 /* SearchItemVC.swift */; };
+		8EBAEF9A21AD18B600504EA2 /* ViewLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEF9921AD18B600504EA2 /* ViewLocationVC.swift */; };
+		8EBAEF9C21AD18C800504EA2 /* ViewMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEF9B21AD18C800504EA2 /* ViewMapVC.swift */; };
 		ED0D8AE421A85F59006FEA08 /* UserDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D8AE321A85F59006FEA08 /* UserDashboardVC.swift */; };
 		ED0D8AE621A85F6B006FEA08 /* EmployeeDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D8AE521A85F6B006FEA08 /* EmployeeDashboardVC.swift */; };
 		ED1C68BE21AA0DA1003079E3 /* DonationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1C68BD21AA0DA1003079E3 /* DonationItem.swift */; };
@@ -35,6 +38,9 @@
 		14013D87C9C268132063E80D /* Pods-donation-tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-donation-tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-donation-tracker/Pods-donation-tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		4D88130617CF36C4B87B1DB0 /* Pods_donation_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_donation_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EBAEF8F21AD11C000504EA2 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8EBAEF9721AD189300504EA2 /* SearchItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemVC.swift; sourceTree = "<group>"; };
+		8EBAEF9921AD18B600504EA2 /* ViewLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLocationVC.swift; sourceTree = "<group>"; };
+		8EBAEF9B21AD18C800504EA2 /* ViewMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMapVC.swift; sourceTree = "<group>"; };
 		9056957BEC4B9D23B24C3F2E /* Pods-donation-tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-donation-tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-donation-tracker/Pods-donation-tracker.release.xcconfig"; sourceTree = "<group>"; };
 		ED0D8AE321A85F59006FEA08 /* UserDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDashboardVC.swift; sourceTree = "<group>"; };
 		ED0D8AE521A85F6B006FEA08 /* EmployeeDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDashboardVC.swift; sourceTree = "<group>"; };
@@ -120,6 +126,9 @@
 				ED0D8AE521A85F6B006FEA08 /* EmployeeDashboardVC.swift */,
 				ED9A1CD721A88397007DD1C4 /* AddItemVC.swift */,
 				ED9A1CD921A883AB007DD1C4 /* ViewItemsVC.swift */,
+				8EBAEF9721AD189300504EA2 /* SearchItemVC.swift */,
+				8EBAEF9921AD18B600504EA2 /* ViewLocationVC.swift */,
+				8EBAEF9B21AD18C800504EA2 /* ViewMapVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -307,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EBAEF9A21AD18B600504EA2 /* ViewLocationVC.swift in Sources */,
 				ED574E9921A62C4A00A38B1F /* Constants.swift in Sources */,
 				ED83B8C421A6AB0D00188700 /* PickerTextField.swift in Sources */,
 				EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */,
@@ -314,6 +324,7 @@
 				8EBAEF9021AD11C000504EA2 /* Location.swift in Sources */,
 				ED9A1CDA21A883AB007DD1C4 /* ViewItemsVC.swift in Sources */,
 				ED1C68C221AA3796003079E3 /* DonationItemCell.swift in Sources */,
+				8EBAEF9C21AD18C800504EA2 /* ViewMapVC.swift in Sources */,
 				ED574E9B21A62C9F00A38B1F /* LoginVC.swift in Sources */,
 				EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */,
 				ED0D8AE621A85F6B006FEA08 /* EmployeeDashboardVC.swift in Sources */,
@@ -325,6 +336,7 @@
 				ED30EBC821A61D2F001EF9C6 /* GradientView.swift in Sources */,
 				ED3BF6D9219CFC4E00F6663A /* MyButton.swift in Sources */,
 				ED83B8BE21A6881800188700 /* APIService.swift in Sources */,
+				8EBAEF9821AD189300504EA2 /* SearchItemVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
