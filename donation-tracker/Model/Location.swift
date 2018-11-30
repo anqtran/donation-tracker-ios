@@ -20,5 +20,6 @@ struct Location : Decodable {
     public private(set) var longitude: String!
     public private(set) var latitude: String!
     public private(set) var name: String!
+    public private(set) var __v: Int!
     
 }

@@ -9,12 +9,20 @@
 import UIKit
 
 class ViewLocationVC: UITableViewController {
-
-    let locationArray = ["AFD Station 4", "BOYS & GIRLS CLUB W.W.WOOLFOLK", "PATHWAY UPPER ROOM CHRISTIAN MINISTRIES", "PAVILION OF HOPE INC", "D&D CONVENIENCE STORE", "KEEP NORTH FULTON BEAUTIFUL", ]
+    
+    var delegate: LocationDelegate? = nil
+    
+    let locationArray = ["AFD Station 4", "BOYS & GILRS CLUB W.W. WOOLFOLK", "PATHWAY UPPER ROOM CHRISTIAN MINISTRIES", "PAVILION OF HOPE INC", "D&D CONVENIENCE STORE", "KEEP NORTH FULTON BEAUTIFUL" ]
+    var locations = [Location]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        LocationService.instance.findAllLocation {(success) in
+            if (success) {
+                self.locations = LocationService.instance.locations
+            }
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -28,5 +36,25 @@ class ViewLocationVC: UITableViewController {
         cell.textLabel?.text = locationArray[indexPath.row]
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let locationName = locationArray[indexPath.row]
+        guard let currentLocation = findLocation(name: locationName) else {
+            return
+        }
+        LocationService.instance.selectedLocation = currentLocation
+        performSegue(withIdentifier: "locationViewToDetail", sender: nil)
+        
+    }
+    
+    func findLocation(name : String) -> Location? {
+        for l in locations {
+            if l.name == name {
+                return l
+            }
+        }
+        return nil
     }
 }

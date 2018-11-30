@@ -11,6 +11,9 @@
 		8EBAEF9821AD189300504EA2 /* SearchItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEF9721AD189300504EA2 /* SearchItemVC.swift */; };
 		8EBAEF9A21AD18B600504EA2 /* ViewLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEF9921AD18B600504EA2 /* ViewLocationVC.swift */; };
 		8EBAEF9C21AD18C800504EA2 /* ViewMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEF9B21AD18C800504EA2 /* ViewMapVC.swift */; };
+		8EBB8C0C21AF7F3D007DA4C3 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBB8C0B21AF7F3D007DA4C3 /* LocationService.swift */; };
+		8EBB8C0E21AF9956007DA4C3 /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBB8C0D21AF9956007DA4C3 /* LocationDelegate.swift */; };
+		8EBB8C1221AF9C00007DA4C3 /* LocationPresenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBB8C1121AF9C00007DA4C3 /* LocationPresenterVC.swift */; };
 		ED0D8AE421A85F59006FEA08 /* UserDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D8AE321A85F59006FEA08 /* UserDashboardVC.swift */; };
 		ED0D8AE621A85F6B006FEA08 /* EmployeeDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D8AE521A85F6B006FEA08 /* EmployeeDashboardVC.swift */; };
 		ED1C68BE21AA0DA1003079E3 /* DonationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1C68BD21AA0DA1003079E3 /* DonationItem.swift */; };
@@ -41,6 +44,9 @@
 		8EBAEF9721AD189300504EA2 /* SearchItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemVC.swift; sourceTree = "<group>"; };
 		8EBAEF9921AD18B600504EA2 /* ViewLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLocationVC.swift; sourceTree = "<group>"; };
 		8EBAEF9B21AD18C800504EA2 /* ViewMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMapVC.swift; sourceTree = "<group>"; };
+		8EBB8C0B21AF7F3D007DA4C3 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		8EBB8C0D21AF9956007DA4C3 /* LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
+		8EBB8C1121AF9C00007DA4C3 /* LocationPresenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPresenterVC.swift; sourceTree = "<group>"; };
 		9056957BEC4B9D23B24C3F2E /* Pods-donation-tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-donation-tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-donation-tracker/Pods-donation-tracker.release.xcconfig"; sourceTree = "<group>"; };
 		ED0D8AE321A85F59006FEA08 /* UserDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDashboardVC.swift; sourceTree = "<group>"; };
 		ED0D8AE521A85F6B006FEA08 /* EmployeeDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDashboardVC.swift; sourceTree = "<group>"; };
@@ -129,6 +135,8 @@
 				8EBAEF9721AD189300504EA2 /* SearchItemVC.swift */,
 				8EBAEF9921AD18B600504EA2 /* ViewLocationVC.swift */,
 				8EBAEF9B21AD18C800504EA2 /* ViewMapVC.swift */,
+				8EBB8C0D21AF9956007DA4C3 /* LocationDelegate.swift */,
+				8EBB8C1121AF9C00007DA4C3 /* LocationPresenterVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 			children = (
 				ED83B8BD21A6881800188700 /* APIService.swift */,
 				ED1C68BF21AA1381003079E3 /* ItemService.swift */,
+				8EBB8C0B21AF7F3D007DA4C3 /* LocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -322,10 +331,13 @@
 				EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */,
 				ED9A1CD821A88397007DD1C4 /* AddItemVC.swift in Sources */,
 				8EBAEF9021AD11C000504EA2 /* Location.swift in Sources */,
+				8EBB8C1221AF9C00007DA4C3 /* LocationPresenterVC.swift in Sources */,
+				8EBB8C0C21AF7F3D007DA4C3 /* LocationService.swift in Sources */,
 				ED9A1CDA21A883AB007DD1C4 /* ViewItemsVC.swift in Sources */,
 				ED1C68C221AA3796003079E3 /* DonationItemCell.swift in Sources */,
 				8EBAEF9C21AD18C800504EA2 /* ViewMapVC.swift in Sources */,
 				ED574E9B21A62C9F00A38B1F /* LoginVC.swift in Sources */,
+				8EBB8C0E21AF9956007DA4C3 /* LocationDelegate.swift in Sources */,
 				EDA6C3FF219C857900369DD7 /* AppDelegate.swift in Sources */,
 				ED0D8AE621A85F6B006FEA08 /* EmployeeDashboardVC.swift in Sources */,
 				ED83B8C221A69F0500188700 /* DLRadioButton.m in Sources */,
