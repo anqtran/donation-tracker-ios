@@ -12,6 +12,8 @@ import SwiftyJSON
 class ItemService {
     static let instance = ItemService()
     
+    var selectedItem = DonationItem()
+    
     var items = [DonationItem]()
     
     

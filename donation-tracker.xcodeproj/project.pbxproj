@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EB11F9521B0EC87009AEFBA /* ItemPresenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB11F9421B0EC86009AEFBA /* ItemPresenterVC.swift */; };
 		8EBAEF9021AD11C000504EA2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEF8F21AD11C000504EA2 /* Location.swift */; };
 		8EBAEF9821AD189300504EA2 /* SearchItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEF9721AD189300504EA2 /* SearchItemVC.swift */; };
 		8EBAEF9A21AD18B600504EA2 /* ViewLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEF9921AD18B600504EA2 /* ViewLocationVC.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		14013D87C9C268132063E80D /* Pods-donation-tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-donation-tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-donation-tracker/Pods-donation-tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		4D88130617CF36C4B87B1DB0 /* Pods_donation_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_donation_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB11F9421B0EC86009AEFBA /* ItemPresenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenterVC.swift; sourceTree = "<group>"; };
 		8EBAEF8F21AD11C000504EA2 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		8EBAEF9721AD189300504EA2 /* SearchItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemVC.swift; sourceTree = "<group>"; };
 		8EBAEF9921AD18B600504EA2 /* ViewLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLocationVC.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				8EBAEF9B21AD18C800504EA2 /* ViewMapVC.swift */,
 				8EBB8C0D21AF9956007DA4C3 /* LocationDelegate.swift */,
 				8EBB8C1121AF9C00007DA4C3 /* LocationPresenterVC.swift */,
+				8EB11F9421B0EC86009AEFBA /* ItemPresenterVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				EDA6C401219C857900369DD7 /* SplashScreenVC.swift in Sources */,
 				ED9A1CD821A88397007DD1C4 /* AddItemVC.swift in Sources */,
 				8EBAEF9021AD11C000504EA2 /* Location.swift in Sources */,
+				8EB11F9521B0EC87009AEFBA /* ItemPresenterVC.swift in Sources */,
 				8EBB8C1221AF9C00007DA4C3 /* LocationPresenterVC.swift in Sources */,
 				8EBB8C0C21AF7F3D007DA4C3 /* LocationService.swift in Sources */,
 				ED9A1CDA21A883AB007DD1C4 /* ViewItemsVC.swift in Sources */,
