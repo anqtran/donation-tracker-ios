@@ -668,16 +668,30 @@
             </objects>
             <point key="canvasLocation" x="3424.8000000000002" y="2159.3703148425789"/>
         </scene>
-        <!--View Controller-->
+        <!--View MapVC-->
         <scene sceneID="6bd-70-nt0">
             <objects>
-                <viewController id="VLe-mB-1HW" sceneMemberID="viewController">
+                <viewController id="VLe-mB-1HW" customClass="ViewMapVC" customModule="donation_tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rO3-35-Ve2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qyX-eT-gef">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qyX-eT-gef" firstAttribute="top" secondItem="BjM-fT-5gG" secondAttribute="top" id="FbH-me-wsS"/>
+                            <constraint firstItem="qyX-eT-gef" firstAttribute="leading" secondItem="BjM-fT-5gG" secondAttribute="leading" id="bfZ-g5-pPV"/>
+                            <constraint firstItem="BjM-fT-5gG" firstAttribute="trailing" secondItem="qyX-eT-gef" secondAttribute="trailing" id="fSN-nk-jev"/>
+                            <constraint firstItem="BjM-fT-5gG" firstAttribute="bottom" secondItem="qyX-eT-gef" secondAttribute="bottom" id="ohn-cO-AT3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BjM-fT-5gG"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="qyX-eT-gef" id="sXX-ka-lct"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tp7-Ey-Q8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
