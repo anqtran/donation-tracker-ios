@@ -12,6 +12,7 @@ import SwiftyJSON
 class APIService {
     static let instance = APIService()
     
+    var numberOfAttempts = 5
     let defaults = UserDefaults.standard
     
     var isLoggedIn : Bool {

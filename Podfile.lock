@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.3)
+  - DropDown (2.3.12)
   - Socket.IO-Client-Swift (13.3.1):
     - Starscream (~> 3.0.2)
   - Starscream (3.0.6)
@@ -7,22 +8,25 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - DropDown
   - Socket.IO-Client-Swift
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - DropDown
     - Socket.IO-Client-Swift
     - Starscream
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  DropDown: 0bcc278799ec11a3d34ce1aac9367fbbaf5423d9
   Socket.IO-Client-Swift: 79f8f85fa44881838175a20f9bd2c32bef2c9d37
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 5bcd2f424e010a8a93542b6697ca3976db9beb17
+PODFILE CHECKSUM: fe83dd12567247f804a3528d6f5551c0f2d8a57c
 
 COCOAPODS: 1.5.2

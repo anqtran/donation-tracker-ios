@@ -12,7 +12,7 @@ class ViewLocationVC: UITableViewController {
     
     var delegate: LocationDelegate? = nil
     
-    let locationArray = ["AFD Station 4", "BOYS & GILRS CLUB W.W. WOOLFOLK", "PATHWAY UPPER ROOM CHRISTIAN MINISTRIES", "PAVILION OF HOPE INC", "D&D CONVENIENCE STORE", "KEEP NORTH FULTON BEAUTIFUL" ]
+    let locationArray = LocationService.instance.locationArray
     var locations = [Location]()
     
     override func viewDidLoad() {
@@ -21,6 +21,9 @@ class ViewLocationVC: UITableViewController {
         LocationService.instance.findAllLocation {(success) in
             if (success) {
                 self.locations = LocationService.instance.locations
+                print("Locations are \(self.locations)")
+            } else {
+                print("ERROR WHILE REQUEST")
             }
         }
         // Do any additional setup after loading the view.

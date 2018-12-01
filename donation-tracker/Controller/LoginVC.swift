@@ -13,10 +13,12 @@ class LoginVC: UIViewController {
 
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
+    @IBOutlet weak var numberOfAttemptsTxt: UILabel!
+    @IBOutlet weak var SignInBtn: MyButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        numberOfAttemptsTxt.text = "Number of attempts: \(APIService.instance.numberOfAttempts)"
         // Do any additional setup after loading the view.
     }
     
@@ -41,6 +43,13 @@ class LoginVC: UIViewController {
                     
                     self.performSegue(withIdentifier: FROM_LOGIN_TO_USER_DASHBOARD, sender: nil)
                 }
+            } else {
+                APIService.instance.numberOfAttempts -= 1
+                self.numberOfAttemptsTxt.text = "Number of attempts: \(APIService.instance.numberOfAttempts)"
+                if (APIService.instance.numberOfAttempts == 0) {
+                    self.SignInBtn.isUserInteractionEnabled = false
+                }
+                
             }
         }
     }

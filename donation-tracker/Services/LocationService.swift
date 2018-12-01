@@ -11,7 +11,10 @@ import Alamofire
 import SwiftyJSON
 
 class LocationService {
+
     static let instance = LocationService()
+    
+    let locationArray = ["AFD Station 4", "BOYS & GILRS CLUB W.W. WOOLFOLK", "PATHWAY UPPER ROOM CHRISTIAN MINISTRIES", "PAVILION OF HOPE INC", "D&D CONVENIENCE STORE", "KEEP NORTH FULTON BEAUTIFUL"]
     
     var selectedLocation = Location()
     

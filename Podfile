@@ -11,4 +11,5 @@ target 'donation-tracker' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'Socket.IO-Client-Swift'
+  pod 'DropDown'
 end
