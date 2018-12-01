@@ -11,8 +11,10 @@ import DropDown
 class SearchItemVC: UIViewController {
 
     
+    @IBOutlet weak var ItemNotFoundLabel: UILabel!
     @IBOutlet weak var locationBtn: UIButton!
     @IBOutlet weak var categoryBtn: UIButton!
+    @IBOutlet weak var searchTxt: UITextField!
     
     let dropDownLocation = DropDown()
     let dropDownCategory = DropDown()
@@ -37,7 +39,7 @@ class SearchItemVC: UIViewController {
         }
     }
     func setUpCategoryDropDown() {
-        let categories = ["Clothing", "Hat", "Kitchen", "Electronics", " Household", "Other", "All Categories"]
+        let categories = ["Clothing", "Hat", "Kitchen", "Electronics", "Household", "Other", "All Categories"]
         
         dropDownCategory.anchorView = categoryBtn
         
@@ -54,5 +56,46 @@ class SearchItemVC: UIViewController {
     }
     @IBAction func chooseCategoryBtnPressed(_ sender: Any) {
         dropDownCategory.show()
+    }
+    @IBAction func searchBtnOnPressed(_ sender: Any) {
+        // search by location and category
+        let location = locationBtn.titleLabel!.text!
+        
+        if (location == "") {
+            return
+        }
+        print(location)
+        let category = categoryBtn.titleLabel!.text!
+        print(category)
+        // search by category
+        if (!(category == "Select a Category" || category == "All Categories")) {
+            ItemService.instance.findAllItemByCategory(location: location, category: category) { (success) in
+                if (success) {
+                    print("Return search by category")
+                    self.handleAfterSearch()
+                }
+            }
+        } else {
+            if (searchTxt.text != "Enter search text") {
+                ItemService.instance.findAllItemByName(query: searchTxt.text!) { (success) in
+                    if (success) {
+                        print("Return fuzzy search by name")
+                        self.handleAfterSearch()
+                    }
+                }
+            }
+        }
+    }
+    func handleAfterSearch() {
+        let result = ItemService.instance.searchResult
+        print(result)
+        if result.count == 0 {
+            ItemNotFoundLabel.isHidden = false
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.ItemNotFoundLabel.isHidden = true
+            }
+        } else {
+         performSegue(withIdentifier: FROM_SEARCH_ITEM_TO_SEARCH_RESULT, sender: nil)
+        }
     }
 }

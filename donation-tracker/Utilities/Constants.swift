@@ -23,7 +23,7 @@ let FROM_ADD_ITEM_TO_EMPLOYEE_DASHBOARD = "addItemToEmployeeDashboard"
 let FROM_USER_DASHBOARD_TO_SEARCHITEM = "userDashToSearchItem"
 let FROM_USER_DASHBOARD_TO_VIEWLOCATION = "userDashToViewLocation"
 let FROM_USER_DASHBOARD_TO_VIEWMAP = "userDashToViewMap"
-
+let FROM_SEARCH_ITEM_TO_SEARCH_RESULT = "ToSearchResult"
 // User Defaults
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
@@ -38,8 +38,10 @@ let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_CREATE_USER = "\(BASE_URL)user/add"
 let URL_GET_USER = "\(BASE_URL)user/byEmail/"
 let URL_ADD_ITEM = "\(BASE_URL)item/add"
-let URL_GET_ITEMS = "\(BASE_URL)item/byLocation"
+let URL_GET_ITEMS_BY_LOCATION = "\(BASE_URL)item/byLocation"
+let URL_GET_ITEMS_BY_CATEGORY = "\(BASE_URL)item/byCategory"
 let URL_GET_LOCATION = "\(BASE_URL)location"
+let URL_SEARCH_ITEM_BY_NAME = "\(BASE_URL)item/search"
 // header
 let HEADER = [
     "Content-Type": "application/json; charset=utf-8"

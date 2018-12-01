@@ -398,7 +398,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of attempts: 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNc-AJ-vQe">
                                 <rect key="frame" x="111" y="471" width="153.5" height="16"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -626,14 +626,23 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="createAcctBtnPressed:" destination="5pz-9j-sLz" eventType="touchUpInside" id="mu0-wB-G6N"/>
+                                    <action selector="searchBtnOnPressed:" destination="pxZ-GT-Axq" eventType="touchUpInside" id="zVM-FF-DZk"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item not found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFc-Dg-QHR">
+                                <rect key="frame" x="132" y="374.5" width="111.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0gt-DO-3eZ" firstAttribute="centerX" secondItem="Egu-mH-N0x" secondAttribute="centerX" id="K4a-2T-1ms"/>
                             <constraint firstItem="07k-Tb-0Wr" firstAttribute="bottom" secondItem="0gt-DO-3eZ" secondAttribute="bottom" constant="163" id="SZ3-HM-uEf"/>
+                            <constraint firstItem="0gt-DO-3eZ" firstAttribute="top" secondItem="qFc-Dg-QHR" secondAttribute="bottom" constant="15" id="UDY-ph-2GS"/>
                             <constraint firstItem="4om-YB-HAV" firstAttribute="top" secondItem="ta0-Vn-SkL" secondAttribute="bottom" constant="80.5" id="Xz5-7F-fsv"/>
+                            <constraint firstItem="qFc-Dg-QHR" firstAttribute="centerX" secondItem="Egu-mH-N0x" secondAttribute="centerX" id="gsa-zc-AVh"/>
                             <constraint firstItem="4om-YB-HAV" firstAttribute="centerX" secondItem="Egu-mH-N0x" secondAttribute="centerX" id="oYJ-Lw-L2w"/>
                             <constraint firstItem="ta0-Vn-SkL" firstAttribute="top" secondItem="07k-Tb-0Wr" secondAttribute="top" constant="39" id="qfA-hJ-3zF"/>
                             <constraint firstItem="ta0-Vn-SkL" firstAttribute="centerX" secondItem="Egu-mH-N0x" secondAttribute="centerX" id="uGZ-Cv-1oJ"/>
@@ -643,8 +652,11 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="ItemNotFoundLabel" destination="qFc-Dg-QHR" id="Tn0-m5-TTD"/>
                         <outlet property="categoryBtn" destination="8KY-q5-uB6" id="cdW-kg-ZhY"/>
                         <outlet property="locationBtn" destination="R5s-oH-RC8" id="htS-pL-s05"/>
+                        <outlet property="searchTxt" destination="lcm-1b-Xik" id="hlu-Oh-X6f"/>
+                        <segue destination="frr-bQ-tO1" kind="show" identifier="ToSearchResult" id="Uec-XD-Ol2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOq-b5-TzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -682,6 +694,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXz-wH-GaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3425" y="1416"/>
+        </scene>
+        <!--View Search ResultVC-->
+        <scene sceneID="88Z-mD-Oxo">
+            <objects>
+                <tableViewController id="frr-bQ-tO1" customClass="ViewSearchResultVC" customModule="donation_tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2hQ-6m-0sd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customcell" id="2FL-H0-VMv">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2FL-H0-VMv" id="Kwc-J6-API">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="frr-bQ-tO1" id="HLf-vw-xLe"/>
+                            <outlet property="delegate" destination="frr-bQ-tO1" id="WY4-2k-vCV"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Uk-PW-F6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2513" y="2159"/>
         </scene>
         <!--Location PresenterVC-->
         <scene sceneID="JxF-VU-HLU">
