@@ -14,7 +14,21 @@ class ViewMapVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let locations = [
+            ["title": "AFD Station 4",    "latitude": 33.75416, "longitude": -84.37742],
+            ["title": "BOYS & GILRS CLUB W.W. WOOLFOLK", "latitude": 33.73182, "longitude": -84.43971],
+            ["title": "PATHWAY UPPER ROOM CHRISTIAN MINISTRIES",     "latitude": 33.70866, "longitude": -84.41853],
+            ["title": "PAVILION OF HOPE INC",    "latitude": 33.80129, "longitude": -84.25537],
+            ["title": "D&D CONVENIENCE STORE", "latitude": 33.71747, "longitude": -84.2521],
+            ["title": "KEEP NORTH FULTON BEAUTIFUL",     "latitude": 33.96921, "longitude": -84.3688]
+        ]
+        
+        for location in locations {
+            let annotation = MKPointAnnotation()
+            annotation.title = location["title"] as? String
+            annotation.coordinate = CLLocationCoordinate2D(latitude: location["latitude"] as! Double, longitude: location["longitude"] as! Double)
+            mapView.addAnnotation(annotation)
+        }
         // Do any additional setup after loading the view.
     }
     
